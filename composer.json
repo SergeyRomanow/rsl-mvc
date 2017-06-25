@@ -12,14 +12,6 @@
             "RSL\\MVC\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "RSLTest\\Mvc\\": "test/"
-        },
-        "files": [
-            "test/test_autoload.php"
-        ]
-    },
     "require": {
         "php" : "^5.6 || ^7.0",
         "container-interop/container-interop": "^1.1",
