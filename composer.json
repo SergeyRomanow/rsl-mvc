@@ -1,0 +1,41 @@
+{
+    "name": "SergeyRomanow/rsl-mvc",
+    "description": "This is the MVC module for the RSL Framework",
+    "license": "MIT",
+    "keywords": [
+        "rsl",
+        "mvc"
+    ],
+    "homepage": "https://github.com/SergeyRomanow/rsl-mvc",
+	"minimum-stability": "dev",
+	"version" : "1.0.0",    
+	"autoload": {
+        "psr-4": {
+            "RSL\\MVC\\": "src/"
+        }
+    },
+    "require": {
+        "php" : "^5.6 || ^7.0",
+        "container-interop/container-interop": "^1.1",
+        "rsl-framework/rsl-event-manager": "self.version",
+        "rsl-framework/rsl-service-manager": "self.version",
+        "rsl-framework/rsl-mod-stdlib": "self.version",
+        "rsl-framework/rsl-router": "self.version",
+        "rsl-framework/rsl-view": "self.version",
+        "rsl-framework/rsl-module-manager": "self.version",
+        "rsl-framework/rsl-http": "self.version",
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0.7 || ^5.7.14"
+    },
+    "suggest": {
+        "rsl-framework/rsl-service-manager-di":
+            "rsl-service-manager-di provides utilities
+             for integrating rsl-di and rsl-service-manager
+             in your rsl-mvc application"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
